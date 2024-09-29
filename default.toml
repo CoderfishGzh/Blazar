@@ -1,0 +1,13 @@
+[proxy]
+proxy_ip = "0.0.0.0"
+proxy_port = "22122"
+redis_auth = "guozhihao"
+
+[[slice]]
+master = "127.0.0.1:6379"
+
+[[slice]]
+master = "127.0.0.1:6380"
+
+[[slice]]
+master = "127.0.0.1:6381"

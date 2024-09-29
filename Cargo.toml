@@ -1,0 +1,25 @@
+[package]
+name = "blazar"
+version = "0.1.0"
+authors = ["guozhihao <guozhihao@email>"]
+license = "MIT"
+readme = "README.md"
+edition = "2021"
+
+[[bin]]
+name = "blazar" 
+path = "bin/proxy.rs"
+
+[[bin]]
+name = "client"
+path = "bin/client.rs"
+
+[dependencies]
+tokio = {version = "1", features = ["full"]}
+mini-redis = "0.4"
+bytes = "1"
+failure = "0.1.8"
+clap = { version = "4.2.1", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"]}
+toml = "0.8.19"
+atoi = "2.0.0"
